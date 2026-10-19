@@ -1,9 +1,38 @@
+---
+title: "Custom 2D Physics Engine for Games"
+text-scale: 80%
+h1-scale: 85%
+h2-scale: 70%
+h3-scale: 85%
+table-scale: 85%
+---
+
+<!-- @slide Introduction -->
+<!-- @layout AA/BC/BC/BC/BC/BC/BC/BC collapse -->
+<!-- @slide-theme slate sky gray -->
+
+<!-- @set-align left -->
+<!-- @set-gap 0.65 -->
+
 # Custom 2D Physics Engine for Games
+
+***
+
+<!-- @set-align left -->
+<!-- @set-gap 0.65 -->
 
 | **name** | Sulehan |
 |---|---|
 | **neptun** | CRX1CQ |
 | **id** | 2026-OL-05 |
+
+The goal of this project is to build a basic 2D physics engine from scratch and understand how its core systems work.
+
+***
+
+<!-- @set-align left -->
+<!-- @set-gap 0.65 -->
+<!-- @set-scale 95% -->
 
 ## Introduction
 
@@ -20,11 +49,22 @@ It is responsible for basic physical behaviours such as:
 
 **Force / Gravity → Velocity → Position → Collision → Response**
 
-The goal of this project is to build a basic 2D physics engine from scratch and understand how its core systems work.
-
 ---
 
+<!-- @slide Problem -->
+<!-- @layout AA/BC/BC/BC/BC/BC/BC/BC collapse -->
+<!-- @slide-theme slate sky gray -->
+
+<!-- @set-align left -->
+<!-- @set-gap 0.65 -->
+
 # Problem
+
+***
+
+<!-- @set-align left -->
+<!-- @set-gap 0.65 -->
+<!-- @set-scale 90% -->
 
 The project focuses on two main technical problems.
 
@@ -39,6 +79,12 @@ A simple collision detection method can have approximately:
 ### **O(n²) time complexity**
 
 This may become a performance problem when many objects are simulated at the same time.
+
+***
+
+<!-- @set-align left -->
+<!-- @set-gap 0.65 -->
+<!-- @set-scale 95% -->
 
 ## 2. Simulation Stability
 
@@ -55,7 +101,19 @@ Even if collisions are detected correctly, the simulation may still become unsta
 
 ---
 
+<!-- @slide Target Users -->
+<!-- @layout AA/BC/BC/BC/BC/BC/BC/BC collapse -->
+<!-- @slide-theme slate sky gray -->
+
+<!-- @set-align left -->
+<!-- @set-gap 0.65 -->
+
 # Target Users
+
+***
+
+<!-- @set-align left -->
+<!-- @set-gap 0.65 -->
 
 ## 2D Game Developers
 
@@ -71,6 +129,11 @@ Possible functions include:
 
 The physics system can work independently without requiring a complete large game engine.
 
+***
+
+<!-- @set-align left -->
+<!-- @set-gap 0.65 -->
+
 ## Students
 
 The project can also help students understand:
@@ -83,7 +146,19 @@ The project can also help students understand:
 
 ---
 
+<!-- @slide Planned Scope -->
+<!-- @layout AAA/BCD/BCD/BCD/BCD/BCD/BCD/BCD collapse -->
+<!-- @slide-theme slate sky gray -->
+
+<!-- @set-align left -->
+<!-- @set-gap 0.65 -->
+
 # Planned Scope
+
+***
+
+<!-- @set-align left -->
+<!-- @set-gap 0.65 -->
 
 ## Basic Mathematics & Movement
 
@@ -94,6 +169,11 @@ The project can also help students understand:
 - Force
 - Mass
 - Gravity
+
+***
+
+<!-- @set-align left -->
+<!-- @set-gap 0.65 -->
 
 ## Physics System
 
@@ -109,6 +189,11 @@ The project can also help students understand:
 - Circle Collider
 - Box / AABB Collider
 
+***
+
+<!-- @set-align left -->
+<!-- @set-gap 0.65 -->
+
 ### Not Included in the First Version
 
 - Complex polygon collisions
@@ -121,38 +206,75 @@ The project can also help students understand:
 
 ---
 
+<!-- @slide Initial User Journey -->
+<!-- @layout AAAAA/BCDEF/BCDEF/BCDEF/BCDEF/BCDEF/BCDEF/BCDEF collapse -->
+<!-- @slide-theme slate sky gray -->
+
+<!-- @set-align left -->
+<!-- @set-gap 0.65 -->
+
 # Initial User Journey
 
-## 1. Create a Physics World
+***
+
+<!-- @set-align left -->
+<!-- @set-gap 0.65 -->
+<!-- @set-scale 95% -->
+
+### 1. Create a Physics World
 
 Create the environment for the physics simulation.
 
-↓
+**→**
 
-## 2. Create Physical Objects
+***
+
+<!-- @set-align left -->
+<!-- @set-gap 0.65 -->
+<!-- @set-scale 95% -->
+
+### 2. Create Physical Objects
 
 Add objects such as:
 
 **Boxes / Circles**
 
-↓
+**→**
 
-## 3. Define Object Properties
+***
+
+<!-- @set-align left -->
+<!-- @set-gap 0.65 -->
+<!-- @set-scale 95% -->
+
+### 3. Define Object Properties
 
 - Position
 - Mass
 - Velocity
 - Collider Shape
 
-↓
+**→**
 
-## 4. Start the Simulation
+***
+
+<!-- @set-align left -->
+<!-- @set-gap 0.65 -->
+<!-- @set-scale 95% -->
+
+### 4. Start the Simulation
 
 The physics engine automatically updates the objects.
 
-↓
+**→**
 
-## 5. Observe the Result
+***
+
+<!-- @set-align left -->
+<!-- @set-gap 0.65 -->
+<!-- @set-scale 95% -->
+
+### 5. Observe the Result
 
 **Move → Fall → Collide → Slide / Bounce → Stop**
 
@@ -160,9 +282,22 @@ The user can observe and test the physical behaviour of different objects.
 
 ---
 
+<!-- @slide Next Step -->
+<!-- @layout AAA/BCD/BCD/BCD/BCD/BCD/BCD/BCD collapse -->
+<!-- @slide-theme slate sky gray -->
+
+<!-- @set-align left -->
+<!-- @set-gap 0.65 -->
+
 # Next Step
 
-## Stage 1 — Basic Mathematics & Movement
+***
+
+<!-- @set-align left -->
+<!-- @set-gap 0.65 -->
+<!-- @set-scale 85% -->
+
+### Stage 1 — Basic Mathematics & Movement
 
 Implement:
 
@@ -170,7 +305,7 @@ Implement:
 
 Goal: make objects move and fall correctly.
 
-## Stage 2 — Rigid Body System
+### Stage 2 — Rigid Body System
 
 Create physical objects with:
 
@@ -178,7 +313,13 @@ Create physical objects with:
 - Mass
 - Velocity
 
-## Stage 3 — Collision Detection
+***
+
+<!-- @set-align left -->
+<!-- @set-gap 0.65 -->
+<!-- @set-scale 85% -->
+
+### Stage 3 — Collision Detection
 
 Implement:
 
@@ -186,7 +327,7 @@ Implement:
 - Box vs Box
 - Circle vs Box
 
-## Stage 4 — Collision Response & Stability
+### Stage 4 — Collision Response & Stability
 
 Investigate:
 
@@ -195,7 +336,13 @@ Investigate:
 - Stacking Stability
 - Tunneling
 
-## Stage 5 — Performance Testing
+***
+
+<!-- @set-align left -->
+<!-- @set-gap 0.65 -->
+<!-- @set-scale 85% -->
+
+### Stage 5 — Performance Testing
 
 Test with increasing numbers of objects and measure:
 
